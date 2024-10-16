@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #555;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.search-button i {
+    color:#666;
+}
+
+nav {
+    background-color: #333;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav li {
+    margin: 0.5rem;
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Lora", sans-serif;
+}
+
+.social-logo {
+    width: 15px;
+    height: 15px;
+    fill: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+footer {
+    display: flex;
+    margin-top: auto;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        margin-left: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-container {
+        max-width: 100%;
+    }
+}
